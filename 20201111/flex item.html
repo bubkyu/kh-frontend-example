@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>20201110실습</title>
+        <style>
+            html, body{
+                padding : 0;
+                margin : 0;
+            }
+            .flex-container{
+                display: flex;
+              
+                width: 100%;
+                height: 100vh;
+                background-color: #127cc1;
+            }
+
+            .flex-item{
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                border: 1px solid black;
+                align-content: center;
+            }
+            .item1{
+                background-color: #d0cfec;
+                flex-grow : 1;
+
+            }
+            .item2{
+                background-color: #6a8e7f;
+                flex-grow : 3;
+
+            }
+            .item3{
+                background-color: #c6aec6;
+                flex-grow : 2;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-item item1"></div>
+            <div class="flex-item item2"></div>
+            <div class="flex-item item3"></div>
+        </div>
+    </body>
+</html>
