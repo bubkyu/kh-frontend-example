@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dd</title>
+        <style>
+           .terms-box input{
+               display: block;
+               width: 0;
+               height: 0;
+               overflow: hidden;
+               visibility: hidden;
+               position: absolute;
+           }
+         .terms-box label{
+             padding-left: 1.5rem;
+             position:relative;
+             cursor: pointer; /* 커서 손모양 */
+             user-select:none; /* 커서 클릭했을시 복사 방지 */
+         }      
+         .terms-box label::before{
+             content: '';
+             display: block;
+             position: absolute; /* 절대좌표 */
+             
+             top: 0;
+             left: 0;
+             width: 18px;
+             height: 18px;
+             border-radius: 100%;
+             border: 1px solid #cccccc;
+             background-color: #f1f1ff;
+         }   
+         .terms-box input:checked ~ lable::before{ /* 레이블의 비포를 선택하기 */
+            background-color: #0078ff;
+            border-color: #0078ff;
+         }
+         
+           
+        </style>
+    </head>
+    <body>
+        <div class="terms-box">
+            <div>
+                <input id="test" type="checkbox"/>
+                <label for ="test">약관에 동의 </label>
+            </div>
+
+        </div>
+    </body>
+</html>
