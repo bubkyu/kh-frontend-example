@@ -1,4 +1,4 @@
-package kr.or.iei20201119;
+package MultiChttingProgram;
 
 import java.io.IOException;
 import java.io.InputStream;

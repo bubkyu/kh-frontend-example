@@ -1,4 +1,4 @@
-package kr.or.iei20201119;
+package MultiChttingProgram;
 
 import java.net.Socket;
 import java.util.ArrayList;
