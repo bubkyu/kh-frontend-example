@@ -1,4 +1,4 @@
-package kr.or.iei;
+package ChttingProgram;
 
 import java.io.IOException;
 import java.io.InputStream;
